@@ -16,13 +16,13 @@ public class rover {
 	public void printPosition(rover x) {
 		System.out.print(x.x + " " + x.y + " ");
 		if (x.face == 1) {
-			System.out.print('N');
+			System.out.println('N');
 		} else if (x.face == 2) {
-			System.out.print('E');
+			System.out.println('E');
 		} else if (x.face == 3) {
-			System.out.print('S');
+			System.out.println('S');
 		} else if (x.face == 4) {
-			System.out.print('W');
+			System.out.println('W');
 		}
 	}
 	public void moveRover(String commands) {
@@ -33,10 +33,10 @@ public class rover {
 	public void process(char x) {
 		if (x == 'L'){
 			turnleft();
-		} else if (x =='R') {
-			turnright();
 		} else if  (x == 'M') {
 			moveForward();
+		} else if (x =='R') {
+			turnright();
 		}
 	}
 	public void turnleft() {
