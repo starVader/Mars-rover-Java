@@ -27,10 +27,10 @@ public class rover {
 	}
 	public void moveRover(String commands) {
 		for (int x = 0; x < commands.length(); x++) {
-			process(commands.charAt(x));
+			start(commands.charAt(x));
 		}
 	}
-	public void process(char x) {
+	public void start(char x) {
 		if (x == 'L'){
 			turnleft();
 		} else if  (x == 'M') {
